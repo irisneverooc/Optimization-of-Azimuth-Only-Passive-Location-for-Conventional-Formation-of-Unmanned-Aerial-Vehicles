@@ -28,6 +28,8 @@ This article first uses the position estimation method of multi round optimizati
    Then fix two drones as transmission signal sources, denoted as $n_1,n_2$ , and the remaining drones as reception signals. In each round of adjustment, $n_1$ collaborates with another unmanned aerial vehicle (non $n_2$), referred to as the launch crew $n_1,j$. The remaining $n-2$  drones $j$  receive signals, and the angle seen from the observation angle of the receiving drone is recorded as $\alpha_{ij}$. After the same operation of the $n_2$  drone, the angle is recorded as $\beta_{ij}$. When any two of the three numbers, $n_1,i,j$ are equal, $\alpha_{ij}=\beta_{ij}=0$, these two angles will be used to optimize the algorithm based on the following constraints. Record the fixed coded $i$ drone position coordinates as $Q_i(\hat{x}_i,\hat{y}_i),j=1,2,...,n.$
 
    Let $\widehat{\alpha}_{ij}=\angle Q_{n1}Q_{i}Q_{j},\widehat{\beta}_{ij}=\angle Q_{n2}Q_{i}Q_{j}$，when the objective function(below) 
+   
+   ​                                                                           $argmin\sum^{n}[(\widehat{\alpha}_{ij}-\alpha_{ij})^{2}+(\widehat{\beta}_{ij}-\beta_{ij})^{2}]$
    $$
    argmin\sum^{n}[(\widehat{\alpha}_{ij}-\alpha_{ij})^{2}+(\widehat{\beta}_{ij}-\beta_{ij})^{2}]
    $$
