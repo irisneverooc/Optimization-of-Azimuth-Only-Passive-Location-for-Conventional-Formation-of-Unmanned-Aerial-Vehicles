@@ -29,7 +29,6 @@ This article first uses the position estimation method of multi round optimizati
 
    Let $\widehat{\alpha}_{ij}=\angle Q_{n1}Q_{i}Q_{j},\widehat{\beta}_{ij}=\angle Q_{n2}Q_{i}Q_{j}$，when the objective function(below) 
    
-   ​                                                                           $argmin\sum^{n}[(\widehat{\alpha}_{ij}-\alpha_{ij})^{2}+(\widehat{\beta}_{ij}-\beta_{ij})^{2}]$
    $$
    argmin\sum^{n}[(\widehat{\alpha}_{ij}-\alpha_{ij})^{2}+(\widehat{\beta}_{ij}-\beta_{ij})^{2}]
    $$
