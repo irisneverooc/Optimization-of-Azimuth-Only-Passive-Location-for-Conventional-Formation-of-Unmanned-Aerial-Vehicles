@@ -19,29 +19,33 @@ This article first uses the position estimation method of multi round optimizati
    2.2 Problem solving
    Firstly, select a general formation of unmanned aerial vehicles, with a total of drones. This article selects a basic rectangle as the template and adds random errors to the original template to obtain the initial drone coordinates. Plot Table 1 and Table 2 to obtain intuitive positions.
 
+   ![Table12](assets/Table12-1730905208802-1.png)
+
+   ![TST](assets/TST-1730905225427-3.png)
+
+   
+
    Then fix two drones as transmission signal sources, denoted as $n_1,n_2$ , and the remaining drones as reception signals. In each round of adjustment, $n_1$ collaborates with another unmanned aerial vehicle (non $n_2$), referred to as the launch crew $n_1,j$. The remaining $n-2$  drones $j$  receive signals, and the angle seen from the observation angle of the receiving drone is recorded as $\alpha_{ij}$. After the same operation of the $n_2$  drone, the angle is recorded as $\beta_{ij}$. When any two of the three numbers, $n_1,i,j$ are equal, $\alpha_{ij}=\beta_{ij}=0$, these two angles will be used to optimize the algorithm based on the following constraints. Record the fixed coded $i$ drone position coordinates as $Q_i(\hat{x}_i,\hat{y}_i),j=1,2,...,n.$
 
    Let $\widehat{\alpha}_{ij}=\angle Q_{n1}Q_{i}Q_{j},\widehat{\beta}_{ij}=\angle Q_{n2}Q_{i}Q_{j}$，when the objective function(below) 
    $$
    argmin\sum^{n}[(\widehat{\alpha}_{ij}-\alpha_{ij})^{2}+(\widehat{\beta}_{ij}-\beta_{ij})^{2}]
    $$
-   
-   
+
+
    is minimized, the solution can be obtained as $Q_i(\hat{x}_i,\hat{y}_i),j=1,2,...,n.$
-   
+
    The final adjustment amount is calculated:
-   $$
+$$
    \Delta P(\Delta x,\Delta y)=M_j(x_j,y_j)-Q_i(\hat{x}_i,\hat{y}_i)
-   $$
+$$
    The adjusted image is as follows:
 
-![TCPD](D:\AAA_studyfiles\Upload_GitHub\wurenji\assets\TCPD.png)
+![TCPD](assets/TCPD-1730905246798-5.png)
 
 Obtain the curve of standard deviation with iteration times. From this, it can be concluded that the standard deviation can be reduced to a lower level after 15 iterations, basically achieving formation adjustment.
 
-![](D:\AAA_studyfiles\Upload_GitHub\wurenji\assets\itreation.png)
-
-
+![itreation](assets/itreation.png)
 
 
 
