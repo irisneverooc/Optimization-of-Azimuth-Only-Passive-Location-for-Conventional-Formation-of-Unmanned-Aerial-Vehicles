@@ -16,6 +16,7 @@ This article first uses the position estimation method of multi round optimizati
 2. **Research Methods**
    2.1 Problem Restatement
    This article uses the function of sending shuttle signals between drones and the principle of similarity in transmission and reception angles to determine the position deviation of drones and adjust it based on the known initial position and standard template.
+   
    2.2 Problem solving
    Firstly, select a general formation of unmanned aerial vehicles, with a total of drones. This article selects a basic rectangle as the template and adds random errors to the original template to obtain the initial drone coordinates. Plot Table 1 and Table 2 to obtain intuitive positions.
 
